@@ -17,3 +17,19 @@ serde_json = "1"
 thiserror = "2"
 tokio = { version = "1", features = ["time"] }
 tracing = "0.1"
+
+[dev-dependencies]
+tokio = { version = "1", features = ["full"] }
+serde_json = "1"
+
+[[example]]
+name = "basic_proxy"
+path = "examples/basic_proxy.rs"
+
+[[example]]
+name = "direct_analysis"
+path = "examples/direct_analysis.rs"
+
+[[example]]
+name = "management_api"
+path = "examples/management_api.rs"
